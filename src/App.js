@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
+import Message from "./components/Message";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*       <Greet name="shams" age={30}>
+        <button>Office</button>
+      </Greet>
+      <Greet name="akash" age={20}>
+        <button>Teacher</button>
+      </Greet>
+      <Greet name="bipul" age={10}>
+        <button>BCS</button>
+      </Greet> */}
+      {/* <Welcome name="Shams"></Welcome> */}
+      <Message></Message>
     </div>
   );
 }
