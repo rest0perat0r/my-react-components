@@ -1,10 +1,10 @@
 import "./App.css";
-import NonJSXComponent from "./components/NonJSXComponent";
+import Clock from "./components/Clock";
 
 function App() {
   return (
     <div className="App">
-      <NonJSXComponent></NonJSXComponent>
+      <Clock></Clock>
     </div>
   );
 }
