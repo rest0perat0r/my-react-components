@@ -1,10 +1,11 @@
 import "./App.css";
-import Greet from "./components/Greet";
+
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <Greet name="Shams" age={30}>
+      {/*       <Greet name="Shams" age={30}>
         Scientist
       </Greet>
       <Greet name="Akash" age={10}>
@@ -12,7 +13,10 @@ function App() {
       </Greet>
       <Greet name="Bipul" age={20}>
         Businessman
-      </Greet>
+      </Greet> */}
+      <Welcome name="Shams" age={30}>
+        Scientist
+      </Welcome>
     </div>
   );
 }
