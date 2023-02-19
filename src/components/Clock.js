@@ -4,7 +4,7 @@ class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleTimeString(),
+      time: new Date(),
     };
     this.tick = this.tick.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
@@ -32,7 +32,7 @@ class Clock extends Component {
   render() {
     return (
       <div>
-        <h1>Now it is: {this.state.time}</h1>
+        <h1>Now it is: {this.state.time.toLocaleString()}</h1>
         <button onClick={this.startClock}>Start Clock</button>
         <button onClick={this.stopTimer}>Stop the clock</button>
       </div>
